@@ -1,0 +1,16 @@
+# Extron's catalog drivers for the tests: Extron's code, kept on your machine only (README, Tests)
+tests/drivers/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+
+# Editor and OS clutter
+.vs/
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store

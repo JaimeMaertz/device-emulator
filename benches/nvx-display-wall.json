@@ -1,0 +1,48 @@
+{
+  "devices": [
+    {
+      "profile": "crestron_nvx",
+      "model": "DM-NVX-E30",
+      "name": "Encoder 1 (PC)",
+      "options": {"ipid": "11", "multicast": "239.1.1.8"},
+      "transports": [{"type": "cip", "host": "192.168.1.10"}],
+      "start_offline": true
+    },
+    {
+      "profile": "crestron_nvx",
+      "model": "DM-NVX-E30",
+      "name": "Encoder 2 (Cable)",
+      "options": {"ipid": "12", "multicast": "239.1.1.16"},
+      "transports": [{"type": "cip", "host": "192.168.1.10"}],
+      "start_offline": true
+    },
+    {
+      "profile": "crestron_nvx",
+      "model": "DM-NVX-D30",
+      "name": "Decoder 1",
+      "options": {"ipid": "31", "com_target": "127.0.0.1:15301"},
+      "transports": [{"type": "cip", "host": "192.168.1.10"}],
+      "start_offline": true
+    },
+    {
+      "profile": "crestron_nvx",
+      "model": "DM-NVX-D30",
+      "name": "Decoder 2",
+      "options": {"ipid": "32", "com_target": "127.0.0.1:15302"},
+      "transports": [{"type": "cip", "host": "192.168.1.10"}],
+      "start_offline": true
+    },
+    {
+      "profile": "sony_bravia_display",
+      "model": "FW-BZ40 / BZ30 / BZ35 / BZ50 (L, P)",
+      "name": "Display 1",
+      "transports": [{"type": "tcp", "port": 15301}]
+    },
+    {
+      "profile": "sony_bravia_display",
+      "model": "FW-BZ40 / BZ30 / BZ35 / BZ50 (L, P)",
+      "name": "Display 2",
+      "transports": [{"type": "tcp", "port": 15302}]
+    }
+  ]
+}

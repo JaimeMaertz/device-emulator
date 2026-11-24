@@ -1,0 +1,36 @@
+{
+  "devices": [
+    {
+      "profile": "extron_dtp_crosspoint",
+      "model": "DTP CrossPoint 84 4K IPCP SA",
+      "name": "Matrix",
+      "transports": [{"type": "ssh", "port": 22023}, {"type": "tcp", "port": 23}]
+    },
+    {
+      "profile": "nec_projector",
+      "model": "NP-P627UL",
+      "name": "Projector Left",
+      "options": {"warmup": 8, "cooldown": 5},
+      "transports": [{"type": "tcp", "port": 7142}]
+    },
+    {
+      "profile": "nec_projector",
+      "model": "NP-P627UL",
+      "name": "Projector Right",
+      "options": {"warmup": 8, "cooldown": 5},
+      "transports": [{"type": "tcp", "port": 7143}]
+    },
+    {
+      "profile": "lg_display",
+      "model": "UH5J / UH7J series (98UH5J-H)",
+      "name": "Confidence Monitor",
+      "transports": [{"type": "tcp", "port": 9761}]
+    },
+    {
+      "profile": "tascam_bluray",
+      "model": "BD-MP1MKII",
+      "name": "Blu-ray",
+      "transports": [{"type": "tcp", "port": 9030}]
+    }
+  ]
+}

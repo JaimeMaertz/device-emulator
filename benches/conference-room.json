@@ -1,0 +1,39 @@
+{
+  "devices": [
+    {
+      "profile": "samsung_display",
+      "model": "QM series (QMN)",
+      "name": "Display Left",
+      "options": {"display_id": 1},
+      "transports": [{"type": "tcp", "port": 1515}]
+    },
+    {
+      "profile": "samsung_display",
+      "model": "QM series (QMN)",
+      "name": "Display Right",
+      "options": {"display_id": 1},
+      "transports": [{"type": "tcp", "port": 1516}]
+    },
+    {
+      "profile": "biamp_tesira",
+      "model": "TesiraFORTE",
+      "name": "DSP",
+      "design": {
+        "ProgramLevel": {"block": "Level Control", "channels": 1,
+                         "values": {"minLevel 1": -40, "maxLevel 1": 0, "level 1": -15}},
+        "ProgramMute": {"block": "Mute Control", "channels": 1},
+        "MicMute": {"block": "Mute Control", "channels": 1},
+        "RoomCombiner": {"block": "Room Combiner", "rooms": 2, "walls": [[1, 2]]}
+      },
+      "transports": [{"type": "ssh", "port": 22}, {"type": "tcp", "port": 23}]
+    },
+    {
+      "profile": "crestron_cip_panel",
+      "model": "CCC-110-T",
+      "name": "Teams Rooms Console",
+      "options": {"ipid": "03", "mac": "02:00:00:00:00:03"},
+      "transports": [{"type": "cip", "host": "192.168.1.10", "port": 41794, "tls": false}],
+      "start_offline": true
+    }
+  ]
+}
